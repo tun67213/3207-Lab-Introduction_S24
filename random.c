@@ -5,12 +5,16 @@
 
 char randchar()
 {
-    
-    return NULL;
+    int randomInteger = random();
+    int randomValue = randomInteger % 26;
+    printf("Random Value: %d\n", randomValue);
+    char randomCharacter = 'A' + randomValue;
+    return randomCharacter;
 }
 
-int main(int argc, char** argv)
-{
-    
-    return 0;
-}
+// int main(int argc, char** argv)
+// {
+//     char randomCharacter = randchar();
+//     printf("%d\n", randomCharacter);
+//     return 0;
+// }
