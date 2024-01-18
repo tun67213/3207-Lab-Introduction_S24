@@ -7,7 +7,8 @@ char randchar()
 {
     int randomInteger = random();
     int randomValue = randomInteger % 26;
-    printf("Random Value: %d\n", randomValue);
+        // For Debugging purposes
+    // printf("Random Value: %d\n", randomValue);
     char randomCharacter = 'A' + randomValue;
     return randomCharacter;
 }
